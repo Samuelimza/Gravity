@@ -1,12 +1,13 @@
-float Q = 10;
-Mass[] movables;
-float k = 5;
+float Q = 1000;
+Mass[] masses;
+Mass m1, m2;
+float k = 3;
 
 void setup(){
   size(600, 600);
-  movables = new Mass[10];
-  for(int i = 0; i < movables.length; i++){
-    movables[i] = new Mass(int(random(width)), int(random(height)), false);
+  masses = new Mass[10];
+  for(int i = 0; i < masses.length; i++){
+    masses[i] = new Mass(int(random(width)), int(random(height)), false);
   }
   m1 = new Mass(100, 100, false);
   m2 = new Mass(300, 300, false);
