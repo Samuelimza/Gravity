@@ -1,4 +1,4 @@
-float Q = 1000;
+float Q = 100;
 Mass[] masses;
 Mass m1, m2;
 float k = 3;
@@ -10,9 +10,9 @@ void setup(){
     masses[i] = new Mass(int(random(width)), int(random(height)), false);
   }
   m1 = new Mass(100, 100, false);
-  m2 = new Mass(300, 300, false);
+  m2 = new Mass(300, 300, true);
   m1.vel.x = k;
-  m2.vel.x = -k;
+  //m2.vel.x = -k;
 }
 
 void draw(){
